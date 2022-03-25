@@ -3,7 +3,7 @@
 
 :root[mode="light"] {
   --blog-bg-color: #fff;
-  --text-color: #596172;
+  --text-color: #314659;
   --border-color: #eef2f8;
   --catalog-bg-color: #fff;
   --panel-bg-color: #f8f8f8;
@@ -630,7 +630,11 @@ a {
 
 .day .postTitle,
 .entrylist .entrylistPosttitle {
-  font-size: 19px;
+  font-size:20px;
+  font-weight:700;
+  font-family:inherit;
+  padding-left:0;
+  border-bottom:none;
 
   & > a {
     position: relative;
@@ -794,6 +798,10 @@ a {
     .cnblogs-markdown pre {
       white-space: pre;
       position: relative;
+    }
+    .cnblogs-markdown pre code {
+      white-space: pre;
+      word-break: keep-all;
     }
 
     ul,
@@ -1253,3 +1261,20 @@ a {
 ::-webkit-scrollbar-thumb {
   background-color: var(--text-color);
 }
+
+#sidebar_toptags .catListTitle:before {
+	content:'📝';
+}
+#sidebar_categories .catListTitle:before {
+	content:'📂';
+}
+#sidebar_topviewedposts .catListTitle:before {
+	content:'📖';
+}
+#sidebar_topdiggedposts .catListTitle:before {
+	content:'💡';
+}
+.postTitle:before {
+    content: '🌱';
+}
+
